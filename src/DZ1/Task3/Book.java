@@ -1,4 +1,4 @@
-package Task3;
+package DZ1.Task3;
 
 public class Book {
     private String title;
