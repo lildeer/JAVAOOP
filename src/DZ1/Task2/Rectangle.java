@@ -1,4 +1,4 @@
-package Task2;
+package DZ1.Task2;
 
 public class Rectangle {
 

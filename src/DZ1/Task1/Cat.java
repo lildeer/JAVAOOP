@@ -1,4 +1,4 @@
-package Task1;
+package DZ1.Task1;
 
 public class Cat {
 
