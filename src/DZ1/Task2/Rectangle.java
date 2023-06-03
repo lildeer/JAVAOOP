@@ -1,6 +1,6 @@
 package DZ1.Task2;
 
-public class Rectangle {
+public class Rectangle implements RectImp {
 
     private int width;
     private int height;
@@ -30,10 +30,12 @@ public class Rectangle {
         this.width = width;
     }
 
+    @Override
     public int calculateArea() {
         return width * height;
     }
 
+    @Override
     public int calculatePerimeter() {
         return 2 * (width + height);
     }

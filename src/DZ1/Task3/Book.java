@@ -1,6 +1,6 @@
 package DZ1.Task3;
 
-public class Book {
+public class Book implements BookImp{
     private String title;
     private String author;
     private Boolean available;

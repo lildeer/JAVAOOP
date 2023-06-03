@@ -1,6 +1,6 @@
 package DZ1.Task1;
 
-public class Cat {
+public class Cat implements Pet {
 
     private String name;
     private int age;
@@ -26,11 +26,17 @@ public class Cat {
         return owner.getName();
     }
 
-    public void setOwner(String owner){
+    public void setOwner(String owner) {
         this.owner = new Owner(owner);
     }
 
-    public void Greet(){
+    @Override
+    public void Greet() {
         System.out.printf("Meow! My name is %s. I am %d. My master is %s.", name, age, owner.getName());
+    }
+
+    @Override
+    public void Kind() {
+        System.out.println("Cat");
     }
 }

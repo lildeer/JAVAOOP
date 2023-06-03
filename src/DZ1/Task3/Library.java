@@ -2,7 +2,7 @@ package DZ1.Task3;
 
 import java.util.ArrayList;
 
-public class Library {
+public class Library implements LibImp{
     private ArrayList<Book> catalog;
 
     public void AddBook(Book book) {
