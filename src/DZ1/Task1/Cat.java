@@ -1,8 +1,12 @@
 package DZ1.Task1;
 
-public class Cat implements Pet {
+import java.util.Comparator;
+
+public class Cat implements Pet, Comparator<Cat> {
 
     private String name;
+
+    private int weight;
     private int age;
     Owner owner;
 
@@ -30,6 +34,14 @@ public class Cat implements Pet {
         this.owner = new Owner(owner);
     }
 
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
     @Override
     public void Greet() {
         System.out.printf("Meow! My name is %s. I am %d. My master is %s.", name, age, owner.getName());
@@ -38,5 +50,11 @@ public class Cat implements Pet {
     @Override
     public void Kind() {
         System.out.println("Cat");
+    }
+
+    @Override
+    //сравниваем котиков по весу
+    public int compare(Cat o1, Cat o2) {
+        return Integer.compare(o1.getWeight(), o2.getWeight());
     }
 }
