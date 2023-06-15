@@ -15,4 +15,8 @@ public class Owner implements Human {
     public void Name() {
         System.out.println(name);
     }
+
+    public boolean equals(Owner obj) {
+        return this.getName().equals(obj.getName());
+    }
 }
